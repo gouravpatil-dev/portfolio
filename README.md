@@ -1,37 +1,73 @@
 # Gourav's portfolio
 
-A responsive, multi-page React portfolio with a dark developer aesthetic, project case studies, and Motion animations.
+> Turn curious ideas into working software.
 
-## Run locally
+> [Live Portfolio](https://gouravpatil.vercel.app)
 
-```bash
-npm install
-npm run dev
-```
+## Overview
+This portfolio is a multi-page React application focused on clean design, responsive layouts, structured project case studies, and subtle motion.
+Rather than presenting projects as a simple list, the site is designed to explain what I built, the problems I explored, the technologies I used, and what I learned from each project.
+The content and project information are centralized in `src/data/portfolio.js`, making the portfolio straightforward to maintain and extend.
 
-Then open the local address Vite prints in the terminal.
+## Features
+- Multi-page React architecture with client-side routing
+- Responsive layouts for desktop, tablet, and mobile
+- Dark developer-focused visual design
+- Light and dark theme support
+- Motion-based page and interaction animations
+- Project overview and individual case-study pages
+- Structured skills, experience, and education sections
+- Contact section with social links
+- Resume download support
+- Reusable React components
+- Centralized portfolio content and project data
 
-## Make it yours
+## Tech Stack
+### Frontend
+- React
+- JavaScript
+- HTML5
+- CSS3
 
-- Replace the email, GitHub, and LinkedIn placeholders in [src/data/portfolio.js](./src/data/portfolio.js).
-- Update the name, introductory copy, skills, projects, education, and case-study content in [src/data/portfolio.js](./src/data/portfolio.js).
-- Add a real resume as `public/resume.pdf` when it is ready.
+### Tooling & Libraries
+- Vite
+- React Router
+- Motion
+- Lucide React
 
-## Routes
+### Development
+- Git
+- GitHub
+- VS Code
+- npm
 
-- `/` - Home
-- `/about` - About, education, and learning journey
-- `/projects` - Project overview
-- `/projects/:slug` - Individual project case studies
-- `/skills` - Categorised technical stack
-- `/experience` - Current education and opportunity focus
-- `/contact` - Contact details and resume download
-
-## Checks
-
-```bash
-npm run build
-npm run lint
-```
-
-The interface uses [Motion](https://motion.dev/) for the entrance, scroll, hover, and menu transitions. Its action buttons, bento-style cards, and dense dashboard-style layout take inspiration from the design patterns available on [21st.dev](https://21st.dev/).
+## Project Structure
+```text
+portfolio/
+├── public/
+│   └── static assets
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── data/
+│   │   └── portfolio.js
+│   ├── pages/
+│   │   ├── AboutPage.jsx
+│   │   ├── ContactPage.jsx
+│   │   ├── ExperiencePage.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── NotFoundPage.jsx
+│   │   ├── ProjectDetailsPage.jsx
+│   │   ├── ProjectsPage.jsx
+│   │   └── SkillsPage.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
