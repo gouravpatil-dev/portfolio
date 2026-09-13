@@ -13,7 +13,7 @@ export const projects = [
     number: '01',
     slug: 'money-rescue',
     title: 'Money Rescue',
-    status: 'In progress',
+    status: 'Active development',
     tone: 'lime',
     stack: ['React', 'Vite', 'Express', 'SQLite'],
     github: 'https://github.com/gouravpatil-dev/money-rescue',
