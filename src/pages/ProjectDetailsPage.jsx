@@ -16,7 +16,7 @@ export default function ProjectDetailsPage() {
       <section className="detail-hero shell"><Link className="back-link" to="/projects"><ArrowLeft size={15} /> all projects</Link><PageIntro eyebrow={`// project ${project.number}`} title={project.title}>{project.summary}</PageIntro></section>
       <section className="project-detail shell">
         <Reveal><ProjectArt tone={project.tone} /></Reveal>
-        <div className="detail-meta"><Reveal><div><p className="eyebrow">status</p><strong>{project.status}</strong></div></Reveal><Reveal delay={0.05}><div><p className="eyebrow">stack</p><p>{project.stack.join(' · ')}</p></div></Reveal>{project.github && <Reveal delay={0.08}><a className="text-link" href={project.github} target="_blank" rel="noreferrer">view on GitHub <ArrowUpRight size={15} /></a></Reveal>}<Reveal delay={0.1}><a className="text-link" href="#project-note">case study <ArrowUpRight size={15} /></a></Reveal></div>
+        <div className="detail-meta"><Reveal><div><p className="eyebrow">status</p><strong>{project.status}</strong></div></Reveal><Reveal delay={0.05}><div><p className="eyebrow">stack</p><p>{project.stack.join(' · ')}</p></div></Reveal>{project.github && <Reveal delay={0.08}><a className="text-link" href={project.github} target="_blank" rel="noreferrer">source code<ArrowUpRight size={15} /></a></Reveal>}<Reveal delay={0.1}><a className="text-link" href="#project-note">case study <ArrowUpRight size={15} /></a></Reveal></div>
       </section>
       <section className="case-study shell" id="project-note">
         <Reveal><article><p className="eyebrow">01 / the problem</p><h2>{project.problem}</h2></article></Reveal>
