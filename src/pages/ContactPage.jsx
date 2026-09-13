@@ -52,7 +52,7 @@ export default function ContactPage() {
           </Reveal>
         ))}
       </section>
-      <section className="resume-section shell"><Reveal><div><p className="eyebrow">// resume</p><h2>Keep a one-page<br />version ready.</h2><p>Drop your finished resume into <code>public/resume.pdf</code>; the button below will automatically work once the file exists.</p></div><a className="outline-button" href="/resume.pdf" download><Download size={16} /> download resume</a></Reveal></section>
+      <section className="resume-section shell"><Reveal><div><p className="eyebrow">// resume</p><h2>For the recruiters<br />who want a PDF.</h2><p>A short, printable summary of my experience, skills, and projects, if you'd rather have something to keep on file.</p></div><a className="outline-button" href="/resume.pdf" download><Download size={16} /> download resume</a></Reveal></section>
     </>
   )
 }

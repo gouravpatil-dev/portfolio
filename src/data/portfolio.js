@@ -16,6 +16,7 @@ export const projects = [
     status: 'In progress',
     tone: 'lime',
     stack: ['React', 'Vite', 'Express', 'SQLite'],
+    github: 'https://github.com/gouravpatil-dev/money-rescue',
     summary: 'A full-stack finance tracker built for family use, made to make everyday income and spending easy to see and act on.',
     problem: 'Family finances tend to live in scattered notes and memory, so it is hard to see where money is actually going or catch problems early.',
     approach: 'Pair a React and Vite frontend with an Express and SQLite backend so data entry stays fast while the underlying records stay structured and queryable.',
