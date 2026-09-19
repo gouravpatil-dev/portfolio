@@ -16,8 +16,8 @@
   color: var(--text);
   background: var(--bg);
   transition:
-    background 0.3s ease,
-    color 0.3s ease;
+    background 0.5s ease,
+    color 0.5s ease;
 }
 
 .is-light {
@@ -82,8 +82,8 @@
   border-bottom: 1px solid var(--line-strong);
   padding-bottom: 3px;
   transition:
-    color 0.2s,
-    border-color 0.2s;
+    color 0.5s,
+    border-color 0.5s;
 }
 .text-link:hover,
 .back-link:hover {
@@ -147,9 +147,9 @@
   background: transparent;
   color: var(--muted);
   transition:
-    color 0.2s,
-    background 0.2s,
-    border-color 0.2s;
+    color 0.5s,
+    background 0.5s,
+    border-color 0.5s;
 }
 .icon-button {
   width: 34px;
@@ -247,8 +247,8 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.46);
   font: 500 11px var(--mono);
   transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
 }
 .shimmer-button::before {
   content: "";
@@ -389,7 +389,7 @@
   font: 10px/1.45 var(--mono);
 }
 .fact-link {
-  transition: background 0.2s;
+  transition: background 0.5s;
 }
 .fact-link:hover {
   background: color-mix(in srgb, var(--panel) 85%, transparent);
@@ -442,9 +442,9 @@
   border-radius: 10px;
   background: var(--panel);
   transition:
-    border-color 0.25s,
-    transform 0.25s,
-    box-shadow 0.25s;
+    border-color 0.5s,
+    transform 0.5s,
+    box-shadow 0.5s;
 }
 .project-card:hover {
   transform: translateY(-5px);
@@ -1019,8 +1019,8 @@
   background: var(--panel);
   color: inherit;
   transition:
-    transform 0.2s ease,
-    border-color 0.2s;
+    transform 0.5s ease,
+    border-color 0.5s;
 }
 .contact-row-head h3 {
   margin: 0 0 8px;
@@ -1043,7 +1043,7 @@
 .contact-row > svg {
   color: var(--lime);
   justify-self: end;
-  transition: transform 0.2s ease;
+  transition: transform 0.5s ease;
 }
 .contact-row:hover {
   transform: translateY(-3px);
