@@ -36,13 +36,47 @@ export const projects = [
     features: ['LLM-based policy document analysis', 'Vector search over policy text with Pinecone', 'Microservices architecture via FastAPI', 'Next.js 15 frontend'],
     learning: 'Designing a microservices architecture around an LLM pipeline, and structuring retrieval-augmented analysis over long, technical documents.',
   },
+  {
+  number: '03',
+  slug: 'reading-mcp',
+  title: 'ReadingMCP',
+  status: 'Complete',
+  tone: 'purple', 
+  stack: ['TypeScript', 'MCP SDK', 'SQLite', 'Node.js'],
+  summary: 'An MCP server that lets an AI client read and act on a dataset through natural conversation, with a deliberate confirm-before-write safeguard on the one action that modifies data.',
+  problem: 'AI tools that can write data need a safety pattern — a model can misinterpret a request or fill in details you didn\'t intend, so a write action needs a way for a mistake to surface before it\'s saved.',
+  approach: 'Built a standalone MCP server exposing a reading-log dataset: a read-only resource, two read-only tools, and one write tool (log_book) that requires two calls — an unconfirmed call returns a preview only, a second call with confirm: true actually saves.',
+  features: [
+  'books://all read-only resource for the full reading log',
+  'get_reading_summary with optional monthly filtering',
+  'search_books by genre and/or date range',
+  'log_book with explicit confirm-before-write flow',
+  'SQLite persistence over stdio transport',
+  'MCP Inspector verification workflow',
+  ],
+  learning: 'Designing the human-in-the-loop safeguard a real production MCP server would need for any action with a side effect — not just this demo, but the general pattern for AI tools that can write, not just read.',
+  github: 'https://github.com/gouravpatil-dev/reading-mcp',
+  live: '', // no live link — this runs locally via stdio, not a hosted app
+}
 ]
 
 export const skillGroups = [
-  { label: 'Languages', items: ['C++', 'Python', 'JavaScript', 'SQL'] },
-  { label: 'Frontend', items: ['HTML', 'CSS', 'React', 'Responsive UI'] },
-  { label: 'Backend', items: ['Node.js', 'REST APIs', 'Express (learning)'] },
-  { label: 'Data & tools', items: ['Git', 'GitHub', 'Linux', 'Figma'] },
+  {
+    label: 'Languages',
+    items: ['C', 'C++', 'Java', 'Python', 'JavaScript', 'TypeScript'],
+  },
+  {
+    label: 'Frontend',
+    items: ['HTML', 'CSS', 'React', 'Vite', 'Tailwind CSS'],
+  },
+  {
+    label: 'Backend & APIs',
+    items: ['Node.js', 'Express', 'REST APIs', 'SQLite', 'MCP'],
+  },
+  {
+    label: 'Tools',
+    items: ['Git', 'GitHub', 'VS Code', 'Vercel'],
+  },
 ]
 
 export const timeline = [
