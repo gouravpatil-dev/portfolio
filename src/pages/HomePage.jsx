@@ -45,7 +45,7 @@ export default function HomePage() {
 
       <section className="home-work shell">
         <Reveal className="section-heading">
-          <div><p className="eyebrow">// selected work</p><h2>Things I&apos;m building<br />to understand better.</h2></div>
+          <div><p className="eyebrow">// projects</p><h2>Things I&apos;m building<br />to understand better.</h2></div>
           <Link className="text-link" to="/projects">all project notes <ArrowUpRight size={15} /></Link>
         </Reveal>
         <div className="project-list">{projects.map((project, index) => <Reveal key={project.slug} delay={index * 0.08}><ProjectCard project={project} /></Reveal>)}</div>
