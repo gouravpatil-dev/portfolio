@@ -57,7 +57,30 @@ export const projects = [
   learning: 'Designing the human-in-the-loop safeguard a real production MCP server would need for any action with a side effect — not just this demo, but the general pattern for AI tools that can write, not just read.',
   github: 'https://github.com/gouravpatil-dev/reading-mcp',
   live: '', // no live link — this runs locally via stdio, not a hosted app
-}
+  },
+
+  {
+    number: '04',
+    slug: 'settleup',
+    title: 'SettleUp',
+    status: 'Active development',
+    tone: 'peach',
+    stack: ['React', 'TypeScript', 'Express', 'SQLite'],
+    github: 'https://github.com/gouravpatil-dev/settleup',
+    summary: 'A full-stack group expense and debt-settlement app that turns shared spending into clear balances and a smaller set of payments.',
+    problem: 'Group expenses are easy to record but harder to reconcile once different people pay, split costs unequally, and settle at different times.',
+    approach: 'Built a typed React and Express application around a SQLite data layer, separating expense splitting from balance calculation so the financial logic stays deterministic, testable, and independent from the HTTP and database layers.',
+    features: [
+      'Group-based expense and membership management',
+      'Equal, exact, percentage, and share-based splits',
+      'Largest-remainder allocation with integer minor currency units',
+      'Pure balance calculation engine with settlement support',
+      'Cookie-based sessions with bcrypt password hashing',
+      'Zod validation and membership-gated API routes',
+    ],
+    learning: 'Designing financial logic as pure functions and keeping rounding, authorization, persistence, and API concerns separated so correctness can be tested independently.',
+  },
+
 ]
 
 export const skillGroups = [
