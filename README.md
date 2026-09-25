@@ -18,7 +18,6 @@ The content and project information are centralized in `src/data/portfolio.js`, 
 - Project overview and individual case-study pages
 - Structured skills, experience, and education sections
 - Contact section with social links
-- Resume download support
 - Reusable React components
 - Centralized portfolio content and project data
 
